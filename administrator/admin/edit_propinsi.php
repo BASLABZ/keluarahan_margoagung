@@ -19,28 +19,48 @@
  	}
  }
   ?>
-<div id="page-wrapper">
-	<div class="row">
-		<div class="col-sm-6">
-			<h5>Edit Data Propinsi</h5>
-			<div class="panel panel-primary">
-				<div class="panel-heading">Form Edit Data propinsi</div>
-				<div class="panel-body">
-					
-					<form method="POST" class="role">
-					<div class="form-group">
-						<label>Nama Propinsi</label>
-						<input type="text" class="form-control" name="nama_propinsi" value="<?php echo $kolompropinsi[1]; ?>">
-					</div>
-					<div class="form-group">
-					<button type="submit" name="editpropinsi" class="btn btn-warning">
-						Ubah</button>
-					</div>
-					</form>
-
-				</div>
-			</div>
-			
-		</div>
-	</div>
+<div class="page-heading">
+    <h3>
+      <span class="fa fa-star"></span>  Ubah Propinsi
+    </h3>
+    <ul class="breadcrumb">
+        <li>
+            <a href="#">Data</a>
+        </li>
+        <li class="active">  Propinsi </li>
+    </ul>
 </div>
+<div class="wrapper">
+            <div class="row">
+                <div class="col-lg-8">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Ubah Data Propinsi
+                            <span class="tools pull-right">
+                                <a class="fa fa-chevron-down" href="javascript:;"></a>
+                                <a class="fa fa-times" href="javascript:;"></a>
+                             </span>
+                        </header>
+                        <div class="panel-body">
+                            <div class="form">
+                                <form  class="form-horizontal" method="POST" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                       <div class="col-md-12">
+                                        <label>Nama Propinsi</label>
+                                        <input type="text" class="form-control" placeholder="Nama Propinsi" name="nama_propinsi" value="<?php echo $kolompropinsi['nama_propinsi']; ?>">
+                                       </div>
+                                    </div>
+                                     <div class="form-group">
+                                       <div class="col-md-12">
+                                            <button type="submit" name="editpropinsi" class="btn btn-warning"><span class="fa fa-save"></span> Simpan</button>
+                                            <button type="reset" class="btn btn-danger"><span class="fa fa-refresh"></span> Batal</button>
+                                       </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+        </div>

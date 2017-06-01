@@ -27,37 +27,58 @@ if (isset($_POST['edit_galeri'])) {
     }
 }
  ?>
-<div id="page-wrapper">
+
+<div class="page-heading">
+    <h3>
+      <span class="fa fa-star"></span>  Edit data Galeri
+    </h3>
+    <ul class="breadcrumb">
+        <li>
+            <a href="#">Data</a>
+        </li>
+        <li class="active">  Galeri </li>
+    </ul>
+</div>
+<div class="wrapper">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Form Edit Galeri</h1>
+                <div class="col-lg-8">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Edit Data Galeri
+                            <span class="tools pull-right">
+                                <a class="fa fa-chevron-down" href="javascript:;"></a>
+                                <a class="fa fa-times" href="javascript:;"></a>
+                             </span>
+                        </header>
+                        <div class="panel-body">
+                            <div class="form">
+                                <form  class="form-horizontal" method="POST" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                       <div class="col-md-12">
+                                        <label>Judul</label>
+                                        <input type="text" class="form-control" placeholder="Judul Galeri" name="nama_galeri" value="<?php echo $ubahgaleri['nama_galeri']; ?>">
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Upload Gambar / Icon</label>
+                                            <br>
+                                            <?php echo "<img src='images/$gambar' width='100' height='100'>"; ?>
+                                            <input type="file" name="gambar">
+
+                                        </div>
+                                    </div>
+                                     <div class="form-group">
+                                       <div class="col-md-12">
+                                            <button type="submit" class="btn btn-warning" name="edit_galeri"><span class="fa fa-save"></span> Simpan</button>
+                                            <button type="reset" class="btn btn-danger"><span class="fa fa-refresh"></span> Batal</button>
+                                       </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                <form class="role" method="POST" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label>Nama Galeri</label>
-                        <input type="text" name="nama_galeri" class="form-control" value="<?php echo $ubahgaleri[1]; ?>"></div>
-                        <div class="form-group">
-                            <input type="file" name="gambar">
-                            
-                            <?php echo "<img src='images/$gambar' width='100' height='100'>"; ?>
-
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" name="edit_galeri" class="btn btn-warning">Simpan</button>
-                            <button type="reset" class="btn btn-danger">Batal</button>
-                        </div>
-
-
-                    </div>
-                </form>
-                
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
+            
         </div>

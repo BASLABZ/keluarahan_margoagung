@@ -1,6 +1,6 @@
 <?php 
 	$judul_profil = $_POST['judul_profil'];
-	$deskripsi = $_POST['deskripsi'];
+	$deskripsi = $_POST['editor1'];
 
 	if (!empty($_FILES) && $_FILES['gambar']['size'] >0 && $_FILES['gambar']['error'] == 0) {
 		$fileName = $_FILES['gambar']['name'];

@@ -1,42 +1,20 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Aplikasi Pendataan Penduduk Caturharjo</a>
+<div class="header-section">
+            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+            <div class="menu-right">
+                <ul class="notification-menu">
+                    <li>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <img src="user.gif" alt="" />
+                            <?php echo $_SESSION['nama_user']; ?>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="#"><i class="fa fa-user"></i>  Profil</a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i>  Pengaturan</a></li>
+                            <li><a href="index.php?logout=1"><i class="fa fa-sign-out"></i> Keluar</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
             </div>
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-top-links navbar-right">
-                
-                <!-- /.dropdown -->
-               
-                <!-- /.dropdown -->
-                
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>Ganti Password</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="index.php?logout=1"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
-
-            <?php include 'menusamping.php'; ?>
-            <!-- /.navbar-static-side -->
-        </nav>
-       
+        </div>
