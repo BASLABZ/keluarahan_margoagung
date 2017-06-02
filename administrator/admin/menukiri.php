@@ -40,7 +40,7 @@
 
                     </ul>
                 </li>
-                <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Penduduk</span></a></li>
+                <li><a href="index.php?pos=kartu"><i class="fa fa-hdd-o"></i> <span>Data Penduduk</span></a></li>
                 <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kartu  Penduduk</span></a></li>
                 <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kematian</span></a></li>
                 <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kelahiran</span></a></li>

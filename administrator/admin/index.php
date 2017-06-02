@@ -29,6 +29,7 @@
   <link href="../assets_admin/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
   <link rel="stylesheet" href="../assets_admin/js/data-tables/DT_bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="../assets_admin/jjs/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
 </head>
 <body class="sticky-header">
 <section>
@@ -84,11 +85,13 @@
 <script type="text/javascript" src="../assets_admin/js/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="../assets_admin/js/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
 <script type="text/javascript" src="../assets_admin/js/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <!-- <script src="../assets_admin/js/scripts.js"></script> -->
 <script>
   jQuery(document).ready(function(){
          $('.wysihtml5').wysihtml5();
     });
+  $('.select2').select2();
 </script>
 </body>
 </html>
