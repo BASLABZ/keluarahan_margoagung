@@ -1,6 +1,6 @@
 <?php 
-	$idberita = $_GET['idberita'];
-	$row_detail_berita = mysql_fetch_array(mysql_query("SELECT * FROM berita where idberita = '".$idberita."'"));
+	$idkegiatan = $_GET['idkegiatan'];
+	$row_detail_kegiatan = mysql_fetch_array(mysql_query("SELECT * FROM kegiatan where idkegiatan = '".$idkegiatan."'"));
  ?>
 		<section id="blog">
 			
@@ -17,16 +17,16 @@
 						<div class="single_blog_post clearfix" data-animated="fadeInUp" style="padding-top: 10px;">
 							<div class="single_blog_post_descr">
 								
-								<div class="single_blog_post_title"><?php echo $row_detail_berita['judul_berita']; ?></div>
+								<div class="single_blog_post_title"><?php echo $row_detail_kegiatan['judul_kegiatan']; ?></div>
 								<ul class="single_blog_post_info">
 									<li><a href="javascript:void(0);" >Admin</a></li>
-									<li><a href="javascript:void(0);" ><?php echo $row_detail_berita['tgl_posting']; ?></a></li>
+									<li><a href="javascript:void(0);" ><?php echo $row_detail_kegiatan['tgl_posting']; ?></a></li>
 								</ul>
 							</div>
-							<div class="single_blog_post_img"><img src="administrator/admin/images/<?php echo $row_detail_berita['gambar']; ?>" style="width: 870px; height: 500px;" /></div>
+							<div class="single_blog_post_img"><img src="administrator/admin/images/<?php echo $row_detail_kegiatan['gambar']; ?>" style="width: 870px; height: 500px;" /></div>
 							
 							<div class="single_blog_post_content">
-								<p class="margbot50"><?php echo $row_detail_berita['deskripsi']; ?></p>
+								<p class="margbot50"><?php echo $row_detail_kegiatan['deskripsi']; ?></p>
 							</div>
 							
 						</div>
@@ -94,7 +94,7 @@
 						<div class="sidepanel widget_popular_posts">
 							<h3><b>Popular</b> Posts</h3>
 							<?php 
-							$query_resent = mysql_query("select * from berita order by idberita desc limit 5");
+							$query_resent = mysql_query("select * from kegiatan order by idkegiatan desc limit 5");
 							while ($row_resent = mysql_fetch_array($query_resent)) {
 							 ?>
 							<div class="recent_posts_widget clearfix">
@@ -102,8 +102,8 @@
 									<img src="administrator/admin/images/<?php echo $row_resent['gambar']; ?>" style="width: 313px; height: 180px;" />
 								</div>
 								<div class="post_item_content_widget">
-									<a class="title" href="index.php?p=detail_berita&idberita=<?php echo $row_resent['idberita']; ?>" >
-										<?php echo $row_resent['judul_berita'] ; ?>
+									<a class="title" href="index.php?p=detail_kegiatan&idkegiatan=<?php echo $row_resent['idkegiatan']; ?>" >
+										<?php echo $row_resent['judul_kegiatan'] ; ?>
 									</a>
 									<ul class="post_item_inf_widget">
 										<li><?php echo $row_resent['tgl_posting']; ?></li>

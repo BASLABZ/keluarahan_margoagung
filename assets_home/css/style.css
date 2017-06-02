@@ -459,10 +459,12 @@ header {
 /* __________ Clean Code __________ */
 .cleancode_block {
 	padding:96px 0 78px;
-	background-image:url(../images/clean_code_bg.jpg);
+	/*background-image:url(../images/clean_code_bg.jpg);*/
 	background-size:cover;
 	background-position:0 0;
 	background-attachment:fixed !important;
+	background-color: #428bca;
+	color: white;
 }
 
 .cleancode_block .tab-content {

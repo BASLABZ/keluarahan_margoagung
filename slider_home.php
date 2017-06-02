@@ -4,9 +4,9 @@
 		<ul class="slides">
 			<li class="slide1">
 				<div class="flex_caption1">
-					<p class="title1 captionDelay2 FromTop" style="color: white;">Creative</p>
-					<p class="title2 captionDelay4 FromTop" style="color: white;">White</p>
-					<p class="title3 captionDelay6 FromTop" style="color: white;">Templates</p>
+					<p class="title1 captionDelay2 FromTop" style="color: white;">Margoagung</p>
+					<p class="title2 captionDelay4 FromTop" style="color: white;">Seyegan</p>
+					<p class="title3 captionDelay6 FromTop" style="color: white;">Sleman</p>
 					<p class="title4 captionDelay7 FromBottom" style="color: white;">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
 				</div>
 				<a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>
@@ -36,9 +36,9 @@
 	</div>
 	<div id="carousel">
 		<ul class="slides">
-			<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
-			<li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
-			<li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+			<li><img src="assets_home/images/slider/slide1_bg.jpg" alt="" /></li>
+			<li><img src="assets_home/images/slider/slide2_bg.jpg" alt="" /></li>
+			<li><img src="assets_home/images/slider/slide3_bg.jpg" alt="" /></li>
 		</ul>
 	</div><!-- //TOP SLIDER -->
 </section><!-- //HOME -->

@@ -1,74 +1,63 @@
-<style type="text/css">
-	.banner-bottom-strip {
-    background: #3d9b4e;
-    background-size: cover;
-    min-height: 205px;
-}
-</style>
-<div class="banner-bottom-strip">
-	<div class="container">
-		<h3>Kelurahan Caturharjo</h3>
-		<div class="row">
-			<div class="col-sm-2">
-				<center><img src="administrator/admin/images/logo.png" alt="" width="100" height="110" />
-				</center>
+<section id="contacts">
+	</section>
+		<footer>
+		<div class="container">
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+					<h4><b>Featured</b> posts</h4>
+					<?php 
+					$query  = mysql_query("SELECT * FROM berita order by idberita DESC limit 3");
+					while ($rowberita = mysql_fetch_array($query)) {
+					 ?>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="administrator/admin/images/<?php echo $rowberita['gambar']; ?>" alt=""  style='width: 87px; height: 50px;'/>
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="blog.html" ><?php echo $rowberita['judul_berita']; ?></a>
+							<ul class="post_item_inf_small">
+								<li><?php echo $rowberita['tgl_posting']; ?></li>
+							</ul>
+						</div>
+					</div>
+					<?php } ?>
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+					<h4><b>About</b> us</h4>
+					<p align="justify">Mewujudkan Masyarakat Margoagung Seyegan yang rukun dan sejahtera. Melaksanakan Pelayanan Masyarakat dengan prima. Memelihara stabilitas keamanan, ketertiban dan kenyamanan didalam masyarakat. Melaksanakan pemberdayaan masyarakat sesuai dengn potensi lokal. Meningkatkan kualitas dan kuantitas sarana pendidikan. Melestarikan kebudayaan. Profesionalisme aparatur kelurahan</p>
+					<ul class="social">
+						<li><a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-pinterest-square"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="map_show fa fa-map-marker"></i></a></li>
+					</ul>
+				</div>
+				
+				<div class="respond_clear"></div>
+				
+				<div class="col-lg-4 col-md-4 padbot30">
+					<h4><b>Contacts</b> Us</h4>
+					
+					<!-- CONTACT FORM -->
+					<div class="span9 contact_form">
+						<div id="note"></div>
+						<div id="fields">
+							<form id="contact-form-face" class="clearfix" action="#">
+								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+								<input class="contact_btn" type="submit" value="Send message" />
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-10">
-			<p>
-		
-		Mewujudkan Masyarakat Caturharjo yang rukun dan sejahtera. 
-		Melaksanakan Pelayanan Masyarakat dengan prima. 
-		Memelihara stabilitas keamanan, ketertiban dan kenyamanan didalam masyarakat.
-		Melaksanakan pemberdayaan masyarakat sesuai dengn potensi lokal.
-		Meningkatkan kualitas dan kuantitas sarana pendidikan.
-		Melestarikan kebudayaan. Profesionalisme aparatur kelurahan.
-	</p>
-			</div>
-			
-		</div>
-		
-	</div>
-</div>
-<div class="footer">
-			 <div class="container">				 	
-				 <div class="col-md-3 ftr_navi ftr">
-					 <h3>Navigation</h3>
-					 <ul>
-						 <li><a href="index.html">Home</a></li>
-						 <li><a href="about.html">Profil</a></li>
-						 <li><a href="gallery.html">Berita</a></li>						
-						 <li><a href="blog.html">Galeri</a></li>
-						 <li><a href="contact.html">Kegiatan</a></li>
-						 <li><a href="contact.html">Kontak</a></li>
-					 </ul>
-				 </div>
-				 
-				 <div class="col-md-3 get_in_touch ftr">
-					  <h3>Hubungi Kami</h3>
-					  <p>Alamat : jl. Radiyo Diwiyo-Ngaglik-Caturharjo Tlp.0274-868103 Kode Pos 55515</p>
-					  <p>904758345, DIY</p>
-					  <p>986589365934</p>
-					  <a href="mailto:mail@baslabz.com">Email : caturharjo@gmail.com</a>
-				 </div>
-				 <div class="col-md-3 ftr-logo">
-					 <a href="index.html"><h4>	<center>
-
-					 <img src="administrator/admin/images/logo.png" alt="" width="100" height="110" /></center> </h4></a>
-					 <p>© 2016 KELURAHAN CATURHARJO. Design by CATURHARJO </p>
-				 </div>
-				<div class="clearfix"> </div>
-			 </div>
-		  </div>
-		  <script type="text/javascript">
-		$(document).ready(function() {
-				/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-				*/
-		$().UItoTop({ easingType: 'easeOutQuart' });
-});
-</script>
+			<div class="row copyright">
+				<div class="col-lg-12 text-center">
+				 <p>@Copyright Ahmad Bastiar <?php echo date('Y'); ?></p>
+				</div>
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer>

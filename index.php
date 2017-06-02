@@ -1,48 +1,85 @@
-<?php include 'administrator/admin/koneksi/koneksi.php'; ?>
-<!DOCTYPE html>
-<html>
+<?php  	include 'administrator/koneksi/koneksi.php'; ?>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Kelurahan Caturharjo :Sleman | Home :: </title>
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Travels Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/jquery.min.js"> </script>
-<script src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
+	
+	<meta charset="utf-8">
+	<title>SIM Kelurahan Margoagung Seyegan | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<!-- CSS -->
+	<link href="assets_home/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets_home/css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="assets_home/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="assets_home/css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets_home/css/owl.carousel.css" rel="stylesheet">
+	<link href="assets_home/css/style.css" rel="stylesheet" type="text/css" />
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	<script src="assets_home/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets_home/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets_home/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="assets_home/js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="assets_home/js/superfish.min.js" type="text/javascript"></script>
+	<script src="assets_home/js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="assets_home/js/owl.carousel.js" type="text/javascript"></script>
+	<script src="assets_home/js/animate.js" type="text/javascript"></script>
+	<script src="assets_home/js/jquery.BlackAndWhite.js"></script>
+	<script src="assets_home/js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
 			});
-</script>
+		});
+		
+	</script>
+	
 </head>
 <body>
-<!-- menu atas -->
-<?php include 'menuatas.php'; ?>
-<!-- main konten -->
- <?php
-if(empty( $_GET['p']) || $_GET['p'] ==""){
-$_GET['p'] = "konten.php";
-}
-if(file_exists( $_GET['p'].".php")){
-include $_GET['p'].".php";
-}else {
-include"konten.php";
-}
-?>
-<!-- footer -->
- <?php include 'footer.php'; ?>
 
-<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!----> 
+<!-- PRELOADER -->
+<img id="preloader" src="assets_home/images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+	<!-- PAGE -->
+	<div id="page">
+		<?php  include 'menuatas_home.php'; ?>
+		 <?php
+			if(empty( $_GET['p']) || $_GET['p'] ==""){
+			$_GET['p'] = "konten.php";
+			}
+			if(file_exists( $_GET['p'].".php")){
+			include $_GET['p'].".php";
+			}else {
+			include"konten.php";
+			}
+			?>
+	</div>
+	<?php include 'footer.php'; ?>
+</div>
 </body>
 </html>
