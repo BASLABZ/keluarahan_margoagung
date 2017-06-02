@@ -6,11 +6,7 @@
         <div class="logo-icon text-center">
             <a href="index.php"><img src="../assets_admin/images/logo_icon.png" alt=""></a>
         </div>
-        <!--logo and iconic logo end-->
-
         <div class="left-side-inner">
-
-            <!-- visible to small devices only -->
             <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media logged-user">
                     <img alt="" src="user.gif" class="media-object">
@@ -26,8 +22,6 @@
                 <li><a href="index.php?logout=1"><i class="fa fa-sign-out"></i> Keluar</a></li>
                 </ul>
             </div>
-
-            <!--sidebar nav start-->
             <ul class="nav nav-pills nav-stacked custom-nav">
                 <li class="active"><a href="index.php"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
                 <li><a href="index.php?pos=daftaradmin"><i class="fa fa-users"></i> <span>Data Admin</span></a></li>
@@ -42,35 +36,33 @@
                         <li><a href="index.php?pos=kabupaten"> Kabupaten</a></li>
                         <li><a href="index.php?pos=kecamatan"> Kecamatan</a></li>
                         <li><a href="index.php?pos=desa"> Desa</a></li>
-                        <li><a href="horizontal_menu.php"> Dusun</a></li>
+                        <li><a href="index.php?pos=dusun"> Dusun</a></li>
 
                     </ul>
                 </li>
                 <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Penduduk</span></a></li>
-                <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kartu Keluarga Penduduk</span></a></li>
+                <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kartu  Penduduk</span></a></li>
                 <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kematian</span></a></li>
                 <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kelahiran</span></a></li>
                 <li class="menu-list"><a href=""><i class="fa fa-book"></i> <span>Data Perpindahan</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="general.php"> General</a></li>
-                        <li><a href="buttons.php"> Buttons</a></li>
-                        <li><a href="tabs-accordions.php"> Tabs & Accordions</a></li>
-                        <li><a href="typography.php"> Typography</a></li>
-                        <li><a href="slider.php"> Slider</a></li>
-                        <li><a href="panels.php"> Panels</a></li>
+                        <li><a href="general.php"> Perpindahan Masuk</a></li>
+                        <li><a href="buttons.php"> Perpindahan Keluar</a></li>
                     </ul>
                 </li>
                 <li class="menu-list"><a href=""><i class="fa fa-file-text"></i> <span>Laporan</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="grids.php"> Grids</a></li>
-                        <li><a href="gallery.php"> Media Gallery</a></li>
-                        <li><a href="calendar.php"> Calendar</a></li>
-                        <li><a href="tree_view.php"> Tree View</a></li>
-                        <li><a href="nestable.php"> Nestable</a></li>
+                        <li><a href="grids.php"> Laporan Penduduk</a></li>
+                        <li><a href="gallery.php"> Laporan Penduduk Masuk</a></li>
+                        <li><a href="calendar.php"> Laporan Penduduk Keluar</a></li>
+                        <li><a href="tree_view.php"> Laporan Kematian</a></li>
+                        <li><a href="nestable.php">    Laporan Kelahiran</a></li>
+                        <li><a href="nestable.php">     Laporan KK Penduduk</a></li>
+                        <li><a href="nestable.php">       Pembuatan Surat</a></li>
 
                     </ul>
                 </li>
-                <li><a href="login.php"><i class="fa fa-sign-in"></i> <span>Login Page</span></a></li>
+                <li><a href="index.php?logout=1"><i class="fa fa-sign-in"></i> <span>Keluar</span></a></li>
             </ul>
         </div>
     </div>

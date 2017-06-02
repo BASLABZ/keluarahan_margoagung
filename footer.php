@@ -32,7 +32,6 @@
 						<li><a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a></li>
 						<li><a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a></li>
 						<li><a href="javascript:void(0);" ><i class="fa fa-pinterest-square"></i></a></li>
-						<li><a href="javascript:void(0);" ><i class="map_show fa fa-map-marker"></i></a></li>
 					</ul>
 				</div>
 				
