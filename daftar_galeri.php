@@ -13,7 +13,7 @@
 							<div class="item">
 						<div class="work_item">
 							<div class="work_img">
-								<img src="administrator/admin/images/<?php echo $rowgaleri['gambar']; ?>" alt=""  width="368px" height="276px" />
+								<img src="administrator/admin/images/<?php echo $rowgaleri['gambar']; ?>"  style="width: 360px; height: 276px;" />
 								<a class="zoom" href="administrator/admin/images/<?php echo $rowgaleri['gambar']; ?>" rel="prettyPhoto[portfolio1]" ></a>
 							</div>
 							<div class="work_description">

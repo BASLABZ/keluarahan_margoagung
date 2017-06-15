@@ -9,10 +9,10 @@
 						$querygaleri = mysql_query("SELECT * from galeri order by idgaleri DESC");
 						while ($rowgaleri = mysql_fetch_array($querygaleri)) {
 					 ?>
-					<div class="item">
+					<div class="item" >
 						<div class="work_item">
 							<div class="work_img">
-								<img src="administrator/admin/images/<?php echo $rowgaleri['gambar']; ?>" alt=""  width="368px" height="276px" />
+								<img src="administrator/admin/images/<?php echo $rowgaleri['gambar']; ?>" style="width: 387px; height: 191px;" />
 								<a class="zoom" href="administrator/admin/images/<?php echo $rowgaleri['gambar']; ?>" rel="prettyPhoto[portfolio1]" ></a>
 							</div>
 							<div class="work_description">

@@ -8,7 +8,7 @@
 			$queryberita = mysql_query("SELECT * FROM berita ORDER BY idberita DESC");
 			while ($rowberita = mysql_fetch_array($queryberita)) {
 		 ?>
-			<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+			<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block" style="width: 400px; height: 500px;">
 				<div class="post_item">
 					<div class="post_item_img">
 						<img src="administrator/admin/images/<?php echo $rowberita['gambar']; ?>" alt=""   style='width: 370px; height: 313px; '/>

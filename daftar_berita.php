@@ -1,8 +1,8 @@
 <!-- BREADCRUMBS -->
-<section class="breadcrumbs_block clearfix parallax">
+<section class="breadcrumbs_block clearfix parallax" style="background-color: #428bca;">
 	<div class="container center">
 		<h2><b>Berita</b>Margoagung</h2>
-		<p>Informasi Berita terbaru dari kelurahan margoagung seyegan, yogyakarta.</p>
+		<p style="color: white;">Informasi Berita terbaru dari kelurahan margoagung seyegan, yogyakarta.</p>
 	</div>
 </section><!-- //BREADCRUMBS -->
 
@@ -32,9 +32,6 @@
 									<li><a href="javascript:void(0);" >Admin</a></li>
 									<li><a href="javascript:void(0);" ><?php echo $rowberita['tgl_posting']; ?></a></li>
 								</ul>
-								<hr>
-								<div class="blog_post_content"><?php echo $rowberita['deskripsi']; ?></div>
-								<a class="read_more_btn" href="index.php?p=detail_berita&idberita=<?php echo $rowberita['idberita']; ?>" >Read More</a>
 							</div>
 						</div><!-- //BLOG POST -->
 						<?php } ?>

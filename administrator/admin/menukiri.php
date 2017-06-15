@@ -41,22 +41,23 @@
                     </ul>
                 </li>
                 <li><a href="index.php?pos=kartu"><i class="fa fa-hdd-o"></i> <span>Data Penduduk</span></a></li>
-                <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kartu  Penduduk</span></a></li>
-                <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kematian</span></a></li>
-                <li><a href="index.php?pos=daftarkegiatan"><i class="fa fa-hdd-o"></i> <span>Data Kelahiran</span></a></li>
-                <li class="menu-list"><a href=""><i class="fa fa-book"></i> <span>Data Perpindahan</span></a>
+                <li><a href="index.php?pos=kartu_keluarga_all"><i class="fa fa-hdd-o"></i> <span>Data Kartu  Penduduk</span></a></li>
+                <li><a href="index.php?pos=daftarkematian"><i class="fa fa-hdd-o"></i> <span>Data Kematian</span></a></li>
+                <li><a href="index.php?pos=daftarkelahiran"><i class="fa fa-hdd-o"></i> <span>Data Kelahiran</span></a></li>
+                <li class="menu-list"><a href="#"><i class="fa fa-book"></i> <span>Data Perpindahan</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="general.php"> Perpindahan Masuk</a></li>
-                        <li><a href="buttons.php"> Perpindahan Keluar</a></li>
+                        <li><a href="index.php?pos=data_pindahpenduduk_masuk"> Perpindahan Masuk</a></li>
+                        <li><a href="index.php?pos=data_pindahpenduduk_keluar"> Perpindahan Keluar</a></li>
                     </ul>
                 </li>
+                <li><a href="index.php?pos=surat"><i class="fa fa-file"></i> <span>Pembuatan Surat</span></a></li>
                 <li class="menu-list"><a href=""><i class="fa fa-file-text"></i> <span>Laporan</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="grids.php"> Laporan Penduduk</a></li>
-                        <li><a href="gallery.php"> Laporan Penduduk Masuk</a></li>
-                        <li><a href="calendar.php"> Laporan Penduduk Keluar</a></li>
-                        <li><a href="tree_view.php"> Laporan Kematian</a></li>
-                        <li><a href="nestable.php">    Laporan Kelahiran</a></li>
+                        <li><a href="cetak_data_penduduk_semua.php"> Laporan Penduduk</a></li>
+                        <li><a href="laporan_penduduk_masuk.php"> Laporan Penduduk Masuk</a></li>
+                        <li><a href="laporan_data_penduduk_keluar.php"> Laporan Penduduk Keluar</a></li>
+                        <li><a href="laporan_data_kematian.php"> Laporan Kematian</a></li>
+                        <li><a href="laporan_kelahiran.php">    Laporan Kelahiran</a></li>
                         <li><a href="nestable.php">     Laporan KK Penduduk</a></li>
                         <li><a href="nestable.php">       Pembuatan Surat</a></li>
 

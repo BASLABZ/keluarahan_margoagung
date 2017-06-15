@@ -1,3 +1,9 @@
+<style type="text/css">
+	.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
+</style>
 <section id="about">
 			<!-- SERVICES -->
 			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
@@ -23,49 +29,44 @@
 					</div><!-- //ROW -->
 				</div><!-- //CONTAINER -->
 			</div><!-- //SERVICES -->
-			
-			<!-- CLEAN CODE -->
-				<!-- CLEAN CODE -->
+
 			<div class="cleancode_block" style="background-color: #428bca; color: white;">
-				
-				<!-- CONTAINER -->
-				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-					
-					<!-- CASTOM TAB -->
-					<div id="myTabContent" class="tab-content">
-						<div class="tab-pane fade in active clearfix" id="tab1">
-							<p class="title"><b>Profil</b> Kelurahan</p>
-							<span style="color: white;">We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
-						</div>
-						<div class="tab-pane fade clearfix" id="tab2">
-							<p class="title"><b>Technical</b> Support</p>
-							<span style="color: white;">We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
-						</div>
-						<div class="tab-pane fade clearfix" id="tab3">
-							<p class="title"><b>Responsive</b></p>
-							<span style="color: white;">We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
-						</div>
-						<div class="tab-pane fade clearfix" id="tab4">
-							<p class="title"><b>Documentation</b></p>
-							<span style="color: white;">We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
-						</div>
-						<div class="tab-pane fade clearfix" id="tab5">
-							<p class="title"><b>Quality</b></p>
-							<span style="color: white;">We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
-						</div>
-						<div class="tab-pane fade clearfix" id="tab6">
-							<p class="title"><b>Support</b></p>
-							<span style="color: white;">We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>
-						</div>
+				<div class="container">
+					<div class="row">
+						<center>
+								<h3 style="color: white;"> <span class="fa fa-home" style="color: white;"></span> Profil Kelurahan Margoagung Seyegan</h3>
+							<?php 
+								$queryProfil  =  mysql_query("SELECT * FROM profil order by idprofil asc ");
+								while ($rowprofil = mysql_fetch_array($queryProfil)) {
+								 ?>
+									<div class="col-md-4">
+										<button class="btn btn-primary" style="color: white;" data-toggle="modal" data-target="#myModal-<?php echo $rowprofil['idprofil']; ?>">
+											<h1 style="color: white;"><span class="fa fa-star" style="color: white;  "></span> </h1>
+											<?php echo $rowprofil['judul_profil']; ?>
+										</button>
+									</div>
+									<div id="myModal-<?php echo $rowprofil['idprofil']; ?>" class="modal fade" role="dialog" >
+								  <div class="modal-dialog" style="padding-top: 100px;" >
+								    <!-- Modal content-->
+								    <div class="modal-content" >
+								      <div class="modal-header" style="background-color: #428bca; color: white;">
+								        <button type="button" class="close" data-dismiss="modal">&times;</button>
+								        <h4 class="modal-title" style="color: white;"><?php echo $rowprofil['judul_profil']; ?></h4>
+								      </div>
+								      <div class="modal-body">
+								        <p style="color: black;"><?php echo $rowprofil['deskripsi']; ?></p>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-xs btn-default" data-dismiss="modal">Tutup</button>
+								      </div>
+								    </div>
+
+								  </div>
+								</div>
+								<?php } ?>
+						</center>
 					</div>
-					<ul id="myTab" class="nav nav-tabs">
-						<li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span>Clean Code</span></a></li>
-						<li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span>Support</span></a></li>
-						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>Responsive</span></a></li>
-						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span>Documentation</span></a></li>
-						<li><a class="i5" href="#tab5" data-toggle="tab" ><i></i><span>Quality</span></a></li>
-						<li><a class="i6" href="#tab6" data-toggle="tab" ><i></i><span>Support</span></a></li>
-					</ul><!-- CASTOM TAB -->
-				</div><!-- //CONTAINER -->
-			</div><!-- //CLEAN CODE -->
+
+				</div>
+			</div>
 		</section>

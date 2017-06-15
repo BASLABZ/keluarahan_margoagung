@@ -21,7 +21,7 @@
 						<li class="scroll_btn"><a href="index.php?p=daftar_galeri" >Galeri</a></li>
 						<!-- <li class="scroll_btn"><a href="#team" ></a></li> -->
 						<li class="scroll_btn"><a href="index.php?p=daftar_kegiatan" >Kegiatan</a></li>
-						<li class="scroll_btn last"><a href="index.php#contacts" >Contacts</a></li>
+						<li class="scroll_btn last"><a href="index.php#contacts" >Kontak</a></li>
 						
 					</ul>
 				</nav>
